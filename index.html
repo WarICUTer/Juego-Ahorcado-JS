@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="public/logo.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="modal">
+
+    <header class="header">
+        <h1 class="title-header">Ahorcado</h1>
+    </header>
+
+    <main class="container-main">
+        <div class="ahorcado">
+            <span id="uno" class="ocultar parteDelAhorcado">0</span>
+            <span id="dos" class="ocultar parteDelAhorcado">/</span>
+            <span id="tres" class="ocultar parteDelAhorcado">\</span> 
+            <span id="cuatro" class="ocultar parteDelAhorcado">|</span>
+            <span id="cinco" class="ocultar parteDelAhorcado">/</span>
+            <span id="seis" class="ocultar parteDelAhorcado">\</span>
+        </div>
+    
+        <h3 class="pista">Prueba escribiendo "WORD"</h3>
+        <div id="palabra-oculta"></div>
+
+        <form class="inputs">
+            <input type="text" class="intento" maxlength="1" required autofocus>
+            <button type="submit" class="btn-intento">Intentar</button>
+        </form>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
